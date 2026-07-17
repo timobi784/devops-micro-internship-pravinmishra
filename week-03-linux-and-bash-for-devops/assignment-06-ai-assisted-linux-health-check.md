@@ -20,13 +20,13 @@ Confirm that Nginx and the React application are healthy before building the aut
 
 #### Screenshot 1 — Output of `systemctl is-active nginx`, `ss -ltn | grep ':80'`, and `curl -I http://localhost`
 
-Add your screenshot here.
+![book1](screenshots/mn.png)
 
 ---
 
 #### Screenshot 2 — Output of `pwd` and `find . -maxdepth 4 -type d | sort` showing the workspace folder structure
 
-Add your screenshot here.
+![book1](screenshots/mb.png)
 
 ---
 
@@ -36,19 +36,19 @@ Answer the following in your own words:
 
 **1. What proves that Nginx is running?**
 
-Add your answer here.
+The command systemctl is-active nginx returned active, confirming that the Nginx service is currently running.
 
 ---
 
 **2. What proves that the server is listening for HTTP traffic?**
 
-Add your answer here.
+The command ss -ltn | grep ':80' showed that port 80 is in the LISTEN state, confirming that the server is accepting HTTP connections.
 
 ---
 
 **3. Why must you capture a healthy baseline before simulating an incident?**
 
-Add your answer here.
+Capturing a healthy baseline provides a known working state to compare against after an incident. It helps identify what changed and makes troubleshooting more accurate and efficient.
 
 ---
 
@@ -62,7 +62,7 @@ Tell Claude exactly what this project does and what it is not allowed to do.
 
 #### Screenshot 3 — CLAUDE.md open in VS Code showing all four sections (Project Overview, Incident Workflow, Safety Rules, Output Rules)
 
-Add your screenshot here.
+![book1](screenshots/mv.png)
 
 ---
 
@@ -72,19 +72,19 @@ Answer the following in your own words:
 
 **1. Why should Claude receive project-specific operational rules?**
 
-Add your answer here.
+Project-specific rules ensure Claude understands the system requirements, follows safe practices, and provides recommendations that align with the project's objectives.
 
 ---
 
 **2. Why is the human required to execute the recovery command?**
 
-Add your answer here.
+Project-specific rules ensure Claude understands the system requirements, follows safe practices, and provides recommendations that align with the project's objectives.1
 
 ---
 
 **3. Which rule prevents Claude from making an unsupported diagnosis?**
 
-Add your answer here.
+"Do not claim a root cause unless the report contains supporting evidence."
 
 ---
 
@@ -98,7 +98,7 @@ Use Claude Code to inspect the environment and produce a read-only plan before c
 
 #### Screenshot 4 — Claude Code showing the five-check plan and read-only inspection results
 
-Add your screenshot here.
+![book1](screenshots/mc.png)
 
 ---
 
@@ -108,19 +108,19 @@ Answer the following in your own words:
 
 **1. Which part of this task represents the Gather phase?**
 
-Add your answer here.
+The Gather phase is when Claude inspected the Ubuntu server using read-only commands to collect information about the system before making any changes. It gathered evidence about the Nginx service, port 80, HTTP response, disk usage, and available memory.
 
 ---
 
 **2. Did Claude follow the instruction not to create files? How did you verify this?**
 
-Add your answer here.
+Yes. Claude followed the instruction by only using read-only commands to inspect the server and propose a Bash incident-triage plan. It did not create or modify any files during the task, and the output only contained inspection results and recommendations.
 
 ---
 
 **3. Why is planning before coding useful in DevOps automation?**
 
-Add your answer here.
+Planning before coding helps identify the correct checks, reduces mistakes, avoids unnecessary changes to production systems, and ensures automation is based on accurate information gathered from the environment.
 
 ---
 
@@ -134,25 +134,25 @@ Create one Bash script that gathers consistent Linux and Nginx health evidence.
 
 #### Screenshot 5 — Top section of `linux-triage.sh` showing variables, thresholds, and the checks array
 
-Add your screenshot here.
+![book1](screenshots/mx.png)
 
 ---
 
 #### Screenshot 6 — Middle section showing check functions and conditionals
 
-Add your screenshot here.
+![book1](screenshots/mz.png)
 
 ---
 
 #### Screenshot 7 — Bottom section showing the loop, summary function, and exit behavior
 
-Add your screenshot here.
+![book1](screenshots/ml.png)
 
 ---
 
 #### Screenshot 8 — Output of `bash -n scripts/linux-triage.sh` (no syntax errors) and `ls -l scripts/linux-triage.sh` showing executable permission
 
-Add your screenshot here.
+![book1](screenshots/mk.png)
 
 ---
 
@@ -162,31 +162,31 @@ Answer the following in your own words:
 
 **1. What is stored in the checks array?**
 
-Add your answer here.
+The checks array stores the names of the health-check functions that the script will execute. Each function performs a specific system check, such as checking the Nginx service, port 80, HTTP response, disk usage, or available memory.
 
 ---
 
 **2. How does the `for` loop use that array?**
 
-Add your answer here.
+The for loop iterates through each function name stored in the checks array and executes them one by one. This ensures every health check runs automatically without repeating code.
 
 ---
 
 **3. Why are the health checks separated into functions?**
 
-Add your answer here.
+Separating the health checks into functions makes the script more organized, reusable, and easier to maintain. Each function has a single responsibility, making debugging and future updates much simpler.
 
 ---
 
 **4. What is the purpose of `$(...)` in this script?**
 
-Add your answer here.
+$() is used for command substitution. It runs a command and stores its output so it can be assigned to a variable or used elsewhere in the script.
 
 ---
 
 **5. Why does the script use different exit codes for HEALTHY, WARN, and FAIL?**
 
-Add your answer here.
+Different exit codes allow other scripts, monitoring tools, and automation systems to quickly determine the health status of the server without reading the entire report. An exit code of 0 typically indicates a healthy state, while non-zero exit codes indicate warnings or failures that require attention.
 
 ---
 
@@ -216,25 +216,25 @@ Answer the following in your own words:
 
 **1. What is the overall status of your healthy baseline?**
 
-Add your answer here.
+The overall status is HEALTHY because all critical health checks completed successfully.
 
 ---
 
 **2. Which exact Linux evidence proves the application is serving traffic?**
 
-Add your answer here.
+The successful HTTP 200 OK response from localhost proves that the web application is serving traffic correctly.
 
 ---
 
 **3. Did your script return exit code 0 or 1? Explain why.**
 
-Add your answer here.
+The script returned exit code 0 because there were no critical failures detected during the health checks.
 
 ---
 
 **4. What is the difference between a warning and a failure in this script?**
 
-Add your answer here.
+A warning (WARN) indicates a non-critical issue that should be monitored, while a failure (FAIL) indicates a critical problem that requires immediate attention.
 
 ---
 
@@ -264,25 +264,25 @@ Answer the following in your own words:
 
 **1. Why does this skill have Bash, Read, and Grep, but not Write?**
 
-Add your answer here.
+Write is not included because the skill is intended to be read-only. It analyzes the system and recommends actions without modifying files or the server.
 
 ---
 
 **2. Why is `disable-model-invocation: true` useful for this skill?**
 
-Add your answer here.
+It ensures the skill performs only its predefined, read-only tasks, making it safer, more predictable, and preventing unintended actions.
 
 ---
 
 **3. What part is performed by Bash, and what part is performed by Claude?**
 
-Add your answer here.
+Bash collects the system health data by running commands, while Claude analyzes the results, explains the findings, and suggests appropriate recovery steps without making changes.
 
 ---
 
 **4. Why is this better than asking Claude "Is my server healthy?" without giving it evidence?**
 
-Add your answer here.
+This is better because Claude bases its analysis on real system evidence instead of making assumptions. The Bash script collects actual health data, such as the Nginx service status, port availability, HTTP response, disk usage, and memory usage. Claude then analyzes this evidence to provide an accurate assessment and recommend appropriate actions. This makes the diagnosis more reliable and reduces the risk of incorrect conclusions.
 
 ---
 
@@ -318,31 +318,39 @@ Answer the following in your own words:
 
 **1. Which three checks failed?**
 
-Add your answer here.
+The three checks that failed were:
+
+Nginx service check
+
+Port 80 listening check
+
+HTTP response check
+
+These failed because the Nginx service was stopped.
 
 ---
 
 **2. What evidence supports the conclusion that Nginx is unavailable?**
 
-Add your answer here.
+The evidence is that the Nginx service status was inactive, the HTTP request to http://localhost failed, and port 80 was no longer listening. These results confirm that Nginx was unavailable.
 
 ---
 
 **3. Did Claude execute the recovery command? Why is that important?**
 
-Add your answer here.
+No, Claude did not execute the recovery command. Instead, it only recommended a command to restart Nginx. This is important because it prevents unintended changes to the system and ensures that a human operator reviews and approves any recovery action before it is performed.
 
 ---
 
 **4. Which phase of the Agentic Loop is represented by the Bash report?**
 
-Add your answer here.
+The Bash report represents the Observe phase of the Agentic Loop because it collects real-time information about the system's health and provides evidence for analysis.
 
 ---
 
 **5. Which phase is represented by Claude's explanation?**
 
-Add your answer here.
+Claude's explanation represents the Reason phase of the Agentic Loop because it analyzes the Bash report, identifies the cause of the problem, and recommends appropriate recovery steps without executing them.
 
 ---
 
@@ -472,13 +480,13 @@ Add your answer here.
 
 Paste your LinkedIn post URL here:
 
-`__________________________`
+https://www.linkedin.com/posts/tim-obi-40688a3a7_week-3-of-my-devops-micro-internship-activity-7484017043898556416-zrUM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGOencYBw8GQRmlEqrn_AHS24OqmBpkIlVs
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![book1](screenshots/kk.png)
 
 ---
 
@@ -486,7 +494,7 @@ Add your screenshot here.
 
 Paste the URL of your GitHub folder or repository containing the assignment files here:
 
-`__________________________`
+https://github.com/timobi784/devops-micro-internship-pravinmishra.git
 
 ---
 

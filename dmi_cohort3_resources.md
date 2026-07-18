@@ -238,6 +238,7 @@ Week-4 is **5 assignment files**, each graded pass/fail — your blog post for t
 | Assignment-3 | CodeTrack branching workflow: Contact page | 20 |
 | Assignment-4 | GitHub account, exploration, and professional profile | 20 |
 | Assignment-5 | GitHub fork, clone, sync, and pull request | 20 |
+| Assignment-6 | Building an AI-Assisted Git Safety Net (PR Ready Check) | 20 |
 | — | LinkedIn post | 10 |
 | — | Blog post | 30 |
-| **Total** | | **140** |
+| **Total** | | **160** |

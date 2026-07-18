@@ -1,4 +1,4 @@
-# Assignment 2 — Building an AI-Assisted Git Safety Net (PR Ready Check)
+# Assignment 6 — Building an AI-Assisted Git Safety Net (PR Ready Check)
 
 Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 

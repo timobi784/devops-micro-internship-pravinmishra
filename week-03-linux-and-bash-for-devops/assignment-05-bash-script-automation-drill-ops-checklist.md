@@ -50,7 +50,7 @@ Bash is a specific implementation of a shell. It executes commands and provides 
 
 **3. Why is it important to confirm the Bash version before writing scripts?**
 
-Add your answer here.
+It is important to confirm the Bash version before writing scripts because different Bash versions support different features. Checking the version ensures the script is compatible with the system and helps avoid errors caused by unsupported commands or syntax.
 
 ---
 
@@ -293,6 +293,7 @@ Storing paths in variables makes scripts easier to maintain, update, and reuse. 
 **4. What happens if the file does not exist?**
 
 If the file does not exist, the -f condition evaluates to false, and the script executes the else block, displaying a message that the file does not exist.
+
 ---
 
 # Task 7 — Conditionals: Pass or Retry Script

@@ -20,7 +20,7 @@ Create or access your Jira Cloud account and reach the Jira Software workspace s
 
 #### Screenshot 1 — Jira welcome page, dashboard, or main workspace after successful login, with your name or avatar visible
 
-![alt text](<Screenshot 2026-07-30 at 23.01.38.png>)
+![book1](screenshots/qq.png)
 
 ---
 
@@ -34,7 +34,7 @@ Confirm your email address if Atlassian requests verification.
 
 #### Screenshot 2 (if applicable) — Confirmation screen after email verification, or the inbox showing the Atlassian verification email subject
 
-![alt text](<Screenshot 2026-07-30 at 22.18.17.png>)
+Add your screenshot here.
 
 ---
 
@@ -42,7 +42,7 @@ Confirm your email address if Atlassian requests verification.
 
 If you signed up with Google and no separate email verification was required, state that here instead of a screenshot.
 
-Write your answer here.
+I signed up with Google.    
 
 ---
 
@@ -56,7 +56,7 @@ Update your Jira profile with your full name, a job title or role (e.g. "Aspirin
 
 #### Screenshot 3 — Updated profile page showing your full name, role/title, and bio
 
-![alt text](image.png)
+![book1](screenshots/ss.png)
 
 ---
 
@@ -70,13 +70,13 @@ Locate the project list and open a project's Board or Backlog, and view Project 
 
 #### Screenshot 4 — "View all projects" page showing at least one project
 
-![alt text](<Screenshot 2026-07-30 at 22.59.24.png>)
+![book1](screenshots/kk.png)
 
 ---
 
 #### Screenshot 5 — Opened project showing either the Board or Backlog screen
 
-![alt text](<Screenshot 2026-07-30 at 22.59.56.png>)
+![book1](screenshots/mm.png)
 
 ---
 

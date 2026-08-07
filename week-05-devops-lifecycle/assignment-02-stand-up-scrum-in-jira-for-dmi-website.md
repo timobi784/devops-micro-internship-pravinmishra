@@ -20,7 +20,7 @@ Create a private, team-managed Scrum project named `DevOps Micro-Internship Webs
 
 #### Screenshot 1 — Project confirmation or project sidebar showing the project name and key
 
-![alt text](<Screenshot 2026-07-31 at 21.46.06.png>)
+![book1](screenshots/ee.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create the Epic `Polish DMI Website UI & Deploy` to group the website UI and dep
 
 #### Screenshot 2 — Backlog showing the Epic panel enabled and the Epic visible
 
-![alt text](<Screenshot 2026-07-31 at 21.46.06-1.png>)
+![book1](screenshots/ll.png)
 
 ---
 
@@ -48,13 +48,13 @@ Create all six required Stories (S1–S6) under the Epic, each with its descript
 
 #### Screenshot 3 — Backlog showing the Epic and all six Stories under it
 
-![alt text](image-1.png)
+![book1](screenshots/hh.png)
 
 ---
 
 #### Screenshot 4 — One opened Story showing its Story point estimate, acceptance criteria, and label
 
-Add your screenshot here.
+![book1](screenshots/bn.png)
 
 ---
 
@@ -68,13 +68,13 @@ Break down S2 (Primary button color refresh) and S4 (Footer with version and dat
 
 #### Screenshot 5 — S2 showing all four Sub-tasks
 
-![alt text](<Screenshot 2026-07-31 at 21.50.42.png>)
+![book1](screenshots/88.png)
 
 ---
 
 #### Screenshot 6 — S4 showing all four Sub-tasks
 
-![alt text](<Screenshot 2026-07-31 at 21.50.42-1.png>)
+![book1](screenshots/00.png)
 
 ---
 
@@ -88,7 +88,8 @@ Apply the `frontend` label to S1, S2, S3, S5, and S6, and the `devops` label to 
 
 #### Screenshot 7 — Backlog or Story details showing labels applied to at least two visible Stories
 
-![alt text](<Screenshot 2026-07-31 at 21.23.42.png>)
+![book1](screenshots/df.png)
+![book1](screenshots/dfs.png)
 
 ---
 
@@ -102,13 +103,13 @@ Create a one-week Sprint, move two or three Stories into it (approximately 3–5
 
 #### Screenshot 8 — Sprint 1 before starting, showing the selected Stories and Story Points
 
-![alt text](<Screenshot 2026-07-31 at 21.40.22-3.png>)
+![book1](screenshots/yy.png)
 
 ---
 
 #### Screenshot 9 — Active Sprint board showing the started Sprint and Sprint Goal
 
-![alt text](<Screenshot 2026-07-31 at 21.40.22-2.png>)
+![book1](screenshots/uu.png)
 
 ---
 
@@ -122,13 +123,13 @@ Filter Jira work by the `frontend` and `devops` labels and review Stories with S
 
 #### Screenshot 10 — Filter for label = frontend showing the filtered results
 
-![alt text](<Screenshot 2026-07-31 at 21.40.22-1.png>)
+![book1](screenshots/lp.png)
 
 ---
 
 #### Screenshot 11 — Filter for label = devops showing the filtered results
 
-![alt text](<Screenshot 2026-07-31 at 21.40.22.png>)
+![book1](screenshots/tt.png)
 
 ---
 
@@ -142,7 +143,7 @@ Locate the Burndown Chart for Sprint 1 so it is ready for later progress trackin
 
 #### Screenshot 12 — Burndown Chart page opened for Sprint 1
 
-![alt text](<Screenshot 2026-07-31 at 21.43.35.png>)
+![book1](screenshots/we.png)
 
 ---
 

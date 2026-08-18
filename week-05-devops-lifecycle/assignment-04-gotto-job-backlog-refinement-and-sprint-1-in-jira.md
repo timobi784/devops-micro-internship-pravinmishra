@@ -20,7 +20,7 @@ Choose Team Mode or Solo Mode, and document how each Scrum role (Product Owner, 
 
 #### Screenshot 1 — Jira "Create project" screen, or the project sidebar after creation
 
-Add your screenshot here.
+![book1](screenshots/123.png)
 
 ---
 
@@ -28,7 +28,13 @@ Add your screenshot here.
 
 Write one line for each role: PO (what you prioritized), SM (how you ensured process), Dev Lead (what you built), DevOps Lead (how you shipped).
 
-Write your answer here.
+Product Owner: Responsible for deciding which tasks are most important and should come first in the backlog. Since this is Solo Mode, I will personally rank the Stories based on their value to the user or business in Task 4.
+
+Scrum Master (SM): Responsible for making sure the Scrum process is followed properly. This includes managing time, carrying out sprint activities like planning and retrospectives, and keeping myself accountable to the Scrum practices.
+
+Dev Lead: Responsible for building the selected Story. In Task 8, this means implementing the chosen UI changes and making sure they work correctly.
+
+DevOps Lead: Responsible for getting the completed work deployed. This includes committing the changes, deploying them, and checking that the updated version is live and working.
 
 ---
 
@@ -42,7 +48,7 @@ Create a Team-managed Scrum project named `Gotto Job – Team <#>` (Team Mode) o
 
 #### Screenshot 2 — Project created page showing the project name and key
 
-Add your screenshot here.
+![book1](screenshots/e5.png)
 
 ---
 
@@ -56,7 +62,7 @@ Create the Epic `Improve Gotto Job UI discoverability & trust` to group the UI i
 
 #### Screenshot 3 — Backlog showing the Epic panel with the Epic visible
 
-Add your screenshot here.
+![book1](screenshots/p09.png)
 
 ---
 
@@ -70,13 +76,13 @@ Create at least six Stories under the Epic, estimate each with 1, 2, or 3 story 
 
 #### Screenshot 4 — Backlog showing the Epic and at least six Stories under it
 
-Add your screenshot here.
+![book1](screenshots/87u.png)
 
 ---
 
 #### Screenshot 5 — One Story opened showing its Story Points and acceptance criteria filled in
 
-Add your screenshot here.
+![book1](screenshots/9l.png)
 
 ---
 
@@ -90,7 +96,7 @@ Confirm the Story Points (1, 2, or 3) for each Story and record brief reasoning 
 
 #### Screenshot 6 — Backlog showing Story Points visible, or two or three Stories opened showing their points
 
-Add your screenshot here.
+![book1](screenshots/76.png)
 
 ---
 
@@ -98,7 +104,7 @@ Add your screenshot here.
 
 For each story, explain in one or two lines why it is a 1, 2, or 3 (mention any debate, even in Solo Mode).
 
-Write your answer here.
+Estimation Method: Solo estimation using Fibonacci story points (1, 2, 3, 5, 8). I estimated each story based on implementation effort, complexity, testing requirements, and risk. Small text or styling changes received 1 point, while changes involving multiple UI elements or additional responsive verification received 2 points.
 
 ---
 
@@ -112,13 +118,13 @@ Create Sprint 1, move three or four Stories into it (approximately 3–6 points)
 
 #### Screenshot 7 — Sprint 1 with the selected Stories inside it
 
-Add your screenshot here.
+![book1](screenshots/5t.png)
 
 ---
 
 #### Screenshot 8 — One Story showing the Sub-tasks created
 
-Add your screenshot here.
+![book1](screenshots/2e3.png)
 
 ---
 
@@ -132,7 +138,7 @@ Open the Burndown Chart and confirm it exists for Sprint 1. It is acceptable if 
 
 #### Screenshot 9 — Burndown Chart page opened, even if empty
 
-Add your screenshot here.
+![book1](screenshots/12a.png)
 
 ---
 
@@ -146,19 +152,19 @@ Implement one small UI-only Story from Sprint 1, commit it, deploy it live, and 
 
 #### Screenshot 10 — Jira board showing the Story moved to Done
 
-Add your screenshot here.
+![book1](screenshots/7y.png)
 
 ---
 
 #### Screenshot 11 — Git commit output
 
-Add your screenshot here.
+![book1](screenshots/nj.png)
 
 ---
 
 #### Screenshot 12 — Live URL in the browser showing the UI change, with the URL visible
 
-Add your screenshot here.
+![book1](screenshots/iy.png)
 
 ---
 
@@ -172,7 +178,7 @@ Add a retro comment covering what went well, what to improve, one Scrum pillar o
 
 #### Screenshot 13 — Jira retro comment visible
 
-Add your screenshot here.
+![book1](screenshots/e56.png)
 
 ---
 
@@ -188,13 +194,13 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/tim-obi-40688a3a7_devops-micro-internship-jira-scrum-delivery-activity-7495085130768683009-zLbj?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGOencYBw8GQRmlEqrn_AHS24OqmBpkIlVs
 
 ---
 
 #### Screenshot 14 — Published LinkedIn post
 
-Add your screenshot here.
+![book1](screenshots/wer.png)
 
 ---
 
